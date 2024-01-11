@@ -44,7 +44,7 @@ public class Program {
 			System.out.println("Date (DD/MM/YYYY): ");
 			
 		//LER UMA VARIÁVEL DO TIPO DATE. ATENCAO - PARA CRIAR UMA DATA NO FORMATO ACIMA, CRIAR UM SIMPLE DATE FORMATE.
-			Date contractDate = sdf.parse(workerLevel);
+			Date contractDate = sdf.parse(workerLevel); 
 			
 			
 		}
