@@ -1,6 +1,7 @@
 package application;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -45,6 +46,7 @@ public class Program {
 			
 		//LER UMA VARIÁVEL DO TIPO DATE. ATENCAO - PARA CRIAR UMA DATA NO FORMATO ACIMA, CRIAR UM SIMPLE DATE FORMATE.
 			Date contractDate = sdf.parse(workerLevel); 
+			
 			
 			
 		}
