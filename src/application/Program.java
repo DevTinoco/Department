@@ -3,6 +3,10 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Department;
+import entities.Worker;
+import entities.enums.WorkerLevel;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -22,6 +26,10 @@ public class Program {
 		String workerLevel= sc.nextLine();
 		System.out.print("Base salary: ");
 		double baseSalary = sc.nextDouble();
+		
+		//DECLARAR UMA VARIAVEL DO TIPO WORKER:
+		
+		Worker worker = new Worker(departmentName,WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
 		
 		
 		
