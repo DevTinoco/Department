@@ -1,5 +1,6 @@
 package application;
 
+import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,6 +16,7 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
+		SimpleDateFormat sdf = new SimpledateFormat("dd/MM/yyyy");
 		
 	
 		System.out.print("Enter department's name: ");
@@ -31,6 +33,21 @@ public class Program {
 		
 		Worker worker = new Worker(departmentName,WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
 		
+		System.out.print("How many contracts to this worker: ");
+		int n = sc.nextInt();
+		
+		// PRA LER OS DADOS DO CONTRATO, CRIAR UM for. DENTRO DESSE for TENHO LER OS DADOS DO CONTRATO. 
+		
+		for (int i = 1; i<=n; i++) {
+			                                   //Concatenar 
+			System.out.println("Enter contract #" + i + " data: ");
+			System.out.println("Date (DD/MM/YYYY): ");
+			
+		//LER UMA VARIÁVEL DO TIPO DATE. ATENCAO - PARA CRIAR UMA DATA NO FORMATO ACIMA, CRIAR UM SIMPLE DATE FORMATE.
+			Date contractDate = sdf.parse(workerLevel);
+			
+			
+		}
 		
 		
 		
