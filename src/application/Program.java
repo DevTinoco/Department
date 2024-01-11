@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Department;
+import entities.HourContract;
 import entities.Worker;
 import entities.enums.WorkerLevel;
 
@@ -45,9 +46,14 @@ public class Program {
 			System.out.println("Date (DD/MM/YYYY): ");
 			
 		//LER UMA VARIÁVEL DO TIPO DATE. ATENCAO - PARA CRIAR UMA DATA NO FORMATO ACIMA, CRIAR UM SIMPLE DATE FORMATE.
-			Date contractDate = sdf.parse(workerLevel); 
+			Date contractDate = sdf.parse(sc.next()); 
+			System.out.print("Value per hour");
+			double valuePerHour = sc.nextDouble();
+			System.out.print("Duraton (hours): ");
+			int hours = sc.nextInt();
 			
-			
+		// ESTANCIA O CONTRATO:
+			HourContract contract = new HourContract(contractDate, valuePerHour, hours);					
 	
 			
 		}
