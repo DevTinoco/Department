@@ -25,6 +25,7 @@ public class Program {
 		System.out.print("Enter department's name: ");
 		String departmentName = sc.nextLine();
 		System.out.print("Enter worker data: ");
+		String hourcontract = sc.nextLine();
 		System.out.print("Name: ");
 		String workerName = sc.nextLine();
 		System.out.print("Level: ");
@@ -55,7 +56,8 @@ public class Program {
 			
 		// ESTANCIA O CONTRATO:
 			HourContract contract = new HourContract(contractDate, valuePerHour, hours);					
-	
+	    // CHAMA O METODO:
+			worker.addContract(contract);
 			
 		}
 		
