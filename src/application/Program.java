@@ -57,9 +57,15 @@ public class Program {
 		// ESTANCIA O CONTRATO:
 			HourContract contract = new HourContract(contractDate, valuePerHour, hours);					
 	    // CHAMA O METODO:
-			worker.addContract(contract);
-			
+			worker.addContract(contract); //PASSANDOO CONTRATO COMO METODO. 	
 		}
+		
+		System.out.println();
+		System.out.println("Enter month ande year to calculate income (MM/YYYY): ");
+		String monthAndYear = sc.next();
+		
+		//VARIAVEL MONTH                  (INFORMAR O INICIO E FIM.)
+		int month = monthAndYear.substring(arg0, arg1);
 		
 		
 		
